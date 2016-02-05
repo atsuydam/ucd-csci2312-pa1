@@ -15,6 +15,6 @@ double computeArea(const Point &p1, const Point &p2, const Point &p3)
     C = p3.distanceTo(p1);
     S = (A + B + C)/2;
 
-    area = sqrt(S * ( (S-A) * (S-B) * (S-C)));
+    area = sqrt(S * (S-A) * (S-B) * (S-C));
     return area;
 }
