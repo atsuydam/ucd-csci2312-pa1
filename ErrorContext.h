@@ -29,7 +29,7 @@ namespace Testing {
 
         void result(bool good);                 // write test result
         ~ErrorContext();                        // write summary info
-        bool ok() const;                        // true iff all tests passed
+        bool ok() const;                        // true if all tests passed
 
     private:
         ostream &os;                            // output stream to use

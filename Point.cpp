@@ -1,6 +1,6 @@
 //
 // Created by atsuydam (Amanda Suydam )on 2/5/16
-//
+// Documentation in Point.h
 #include <cmath>
 #include "Point.h"
 using namespace std;
@@ -9,13 +9,6 @@ Point::Point()
 {
     __x = 0;
     __y = 0;
-    __z = 0;
-}
-
-Point::Point(double x, double y)
-{
-    __x = x;
-    __y = y;
     __z = 0;
 }
 
