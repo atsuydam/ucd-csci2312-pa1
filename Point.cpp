@@ -59,9 +59,24 @@ double Point::getZ() const
 double Point::distanceTo(const Point &A) const
 {
     double distance, x_vector, y_vector, z_vector;
-    x_vector = A.__x + __x;
-    y_vector = A.__y + __y;
-    z_vector = A.__z + __z;
+    if (A.__x == __x)
+        x_vector = 0;
+    else if (A.__x < 0 || __x < 0)
+        x_vector = A.__x -__x;
+    else
+        x_vector = A.__x + __x;
+    if (A.__y == __y)
+        y_vector = 0;
+    else if (A.__y < 0 || __y <0)
+        y_vector = A.__y -__y;
+    else
+        y_vector = A.__y + __y;
+    if (A.__z == __z)
+        z_vector = 0;
+    else if (A.__z < 0 || __z < 0)
+        z_vector = A.__z - __z;
+    else
+        z_vector = A.__z + __z;
     distance = sqrt((x_vector * x_vector) + (y_vector * y_vector) + (z_vector * z_vector));
 
     return distance;
